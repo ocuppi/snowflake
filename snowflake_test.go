@@ -131,6 +131,6 @@ func TestSnowflake_UnmarshalJSON(t *testing.T) {
 func BenchmarkParseBase64(b *testing.B) {
 	b.ReportAllocs()
 	for i := 0; i < b.N; i++ {
-		ParseBase64("7//////////")
+		_, _ = ParseBase64("7//////////")
 	}
 }
