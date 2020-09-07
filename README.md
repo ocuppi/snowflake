@@ -45,11 +45,11 @@ Snowflakes can be converted to base64 (mathematical base using `0-9a-zA-Z+/`). T
 padding.
 ```go 
 // Snowflake to base64
-s := Snowflake(4294967296)
+s := snowflake.Snowflake(4294967296)
 fmt.Println(s.Base64()) // 400000
 
 // Base64 to snowflake
-s = ParseBase64("400000")
+s = snofwlake.ParseBase64("400000")
 fmt.Println(s) // 4294967296
 ```
 
