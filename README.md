@@ -5,7 +5,7 @@ Snowflake is a fast, goroutine-safe unique ID generator built for distributed sy
 [![Go report](http://goreportcard.com/badge/ocuppi/snowflake)](http://goreportcard.com/report/ocuppi/snowflake)
 [![Coverage](http://gocover.io/_badge/github.com/ocuppi/snowflake)](https://gocover.io/github.com/ocuppi/snowflake)
 ## Key concepts
-## Snowflake
+### Snowflake
 Snowflakes are `int64`s. `uint64` is not used for interoperability reasons, and to allow
 for correct sorting. Snowflakes can be naturally sorted by time. The smaller the snowflake, the earlier it was created.
 A snowflake can be broken down into these parts:
